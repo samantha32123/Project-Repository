@@ -1,0 +1,84 @@
+.topnav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #064;
+  margin: 10px 0;
+}
+
+.topnav a {
+  color: white;
+  text-decoration: none;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.topnav :hover {
+  text-decoration: underline;
+}
+
+.logo {
+  border-radius: 100%;
+  background: #064;
+}
+
+h1 {
+  text-align: center;
+  background-color: white;
+}
+
+body {
+  background-image: url(/img/Staake_gray_1124.jpg);
+  font-family: "Courier New", Courier, monospace;
+}
+.row {
+  display: table;
+  margin: 0 auto;
+}
+#images {
+  border: 5px solid black;
+}
+#trophy {
+  border: 5px solid black;
+}
+#coach {
+  border: 5px solid black;
+}
+.btn-photos {
+  position: relative;
+  background-color: #064;
+  left: 330px;
+  top:5px;
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+}
+.btn-prgm {
+    position: relative;
+    background-color: #064;
+    left: 420px;
+    top:5px;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+  }
+  .btn-coaching {
+    position: relative;
+    background-color: #064;
+    top:5px;
+    left: 475px;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+  }
