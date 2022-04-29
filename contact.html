@@ -61,17 +61,17 @@
 
     </div>
     <h1>Contact</h1>
-    <form method="post" action="https://oim-apis.herokuapp.com/form2">
+    <form name="myForm" method="post" action="https://oim-apis.herokuapp.com/form2">
         <div>
             <p>
                 <label for="lastname">Last Name:</label>
-                <input type="text" id="lastname" name="lastname" maxlength="100" placeholder="Last name" />
+                <input type="text" id="lastname" name="name" maxlength="100" placeholder="Last name" />
             </p>
         </div>
         <div>
             <p>
                 <label for="firstname">First Name:</label>
-                <input type="text" id="firstname" name="firstname" maxlength="100" placeholder="First name" />
+                <input type="text" id="firstname" name="name" maxlength="100" placeholder="First name" />
             </p>
         </div>
         <div>
@@ -107,7 +107,18 @@
         <button type="reset" value="Reset"><img src="/img/reset.png" height="30" alt="reset button" /></button>
 
     </form>
-
+    <script>
+        function validateForm() {
+            let x = document.forms["myForm"]["name"].value;
+            if (x == "") {
+                alert("Name must be filled out");
+                return false;
+            }
+        }
+        document.querySelector("button").onclick = function () {
+            validateForm()
+        }
+    </script>
 </body>
 
 </html>

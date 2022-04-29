@@ -102,7 +102,7 @@
     <h1>Program Success</h1>
     <div>
         <div class="column">
-            <img src="/img/transparent-trophy.png" alt="Trophy" style="width:45%" title="Success Trophy">
+            <img id=trophy src="/img/transparent-trophy.png" alt="trophy" style="width:45%" title="Success Trophy">
         </div>
         <div class="centered">10 NCAA Tournaments
         </div>
@@ -112,7 +112,30 @@
         <div class="centered5">'Sweet 16'</div>
 
     </div>
+    <script>
+        function enlargeImage() {
+            console.log("...starting enlarge...")
+            const imageEl = document.getElementById("trophy");
+            w = imageEl.width;
+            w = w * 1.75;
+            imageEl.width = w;
 
+        }
+        document.getElementById("trophy").onmouseover = function () {
+            enlargeImage();
+        };
+
+        function reduceImage() {
+            console.log("...starting reduce...")
+            const imageEl = document.getElementById("trophy");
+            w = imageEl.width;
+            w = w / 1.75;
+            imageEl.width = w;
+        }
+        document.getElementById("trophy").onmouseout = function () {
+            reduceImage();
+        };
+    </script>
 
 </body>
 
